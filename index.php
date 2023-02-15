@@ -29,7 +29,7 @@ if (isset($_GET['nr'])) {
         ->size(300)
         ->margin(10)
         ->roundBlockSizeMode(new RoundBlockSizeModeMargin())
-        ->labelText('This is the label')
+        ->labelText('Scan for Phone Number!')
         ->labelFont(new NotoSans(20))
         ->labelAlignment(new LabelAlignmentCenter())
         ->validateResult(false)
