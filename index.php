@@ -15,7 +15,7 @@ use Endroid\QrCode\Writer\PngWriter;
 $input = '+43 1 22 33 444';
 
 if (isset($_GET['nr'])) {
-    if(!$_GET['nr'] == ''){
+    if (!$_GET['nr'] == '') {
 
         $input = $_GET['nr'];
     }
@@ -29,17 +29,21 @@ if (isset($_GET['nr'])) {
         ->size(300)
         ->margin(10)
         ->roundBlockSizeMode(new RoundBlockSizeModeMargin())
-        ->labelText('This is the label')
+        ->labelText('Your QR-Code')
         ->labelFont(new NotoSans(20))
         ->labelAlignment(new LabelAlignmentCenter())
         ->validateResult(false)
         ->build();
 
-    header('Content-Type: ' . $phone->getMimeType());
     // Directly output the QR code
-
-    echo $phone->getString();
-    
+    echo "<div class=\"center\">";
+    echo "<img src='" .$phone->getDataUri() . "'/>";
+    echo "<br>";
+    echo <<<FORMULAR
+        <input type=button onClick="location.href='index.php'"
+         value='Create a new Code'>
+        </div>
+        FORMULAR;
 
 } else {
     echo <<<FORMULAR

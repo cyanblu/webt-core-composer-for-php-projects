@@ -1,63 +1,67 @@
 body {
     background-color: darkblue;
-  }
-  @media (min-width: 360px) {
+
+}
+
+@media (min-width: 360px) {
     body {
-      background-color: lightcoral;
+        background-color: lightcoral;
     }
-  }
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     body {
-      background-color: lightsalmon;
+        background-color: lightsalmon;
     }
-  }
-  @media (min-width: 1366px) {
+}
+
+@media (min-width: 1366px) {
     body {
-      background-color: forestgreen;
+        background-color: forestgreen;
     }
-  }
-  
-  .container {
+}
+
+.container {
     height: 200px;
     position: relative;
-  }
-  
-  .center {
+}
+
+.center {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
-  
-  .center-button {
+}
+
+.center-button {
     margin: 0;
     position: absolute;
     top: 25%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
-  
-  .textbox {
+}
+
+.textbox {
     margin: auto;
     width: 60%;
     font-family: monospace;
     border: 3px solid black;
     padding: 30px;
     background-color: white;
-  }
-  
-  header {
+}
+
+header {
     font-size: xxx-large;
     font-family: monospace;
     margin-bottom: 0 !important;
     color: white;
     text-align: center;
-  }
-  
-  button {
+}
+
+button {
     background-color: white; /* Green */
     color: black;
     padding: 12px;
@@ -68,9 +72,9 @@ body {
     cursor: pointer;
     border-radius: 12px;
     border: 3px solid black;
-  }
+}
 
-  input {
+input {
     background-color: white; /* Green */
     color: black;
     padding: 2px;
@@ -81,14 +85,20 @@ body {
     cursor: pointer;
     border-radius: 6px;
     border: 3px solid black;
-  }
+}
 
-  h1{
+h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
-  }
+}
 
-  ::placeholder{
+::placeholder {
     color: rgba(0, 0, 0, 0.5);
 
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
