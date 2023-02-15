@@ -29,7 +29,7 @@ if (isset($_GET['nr'])) {
         ->size(300)
         ->margin(10)
         ->roundBlockSizeMode(new RoundBlockSizeModeMargin())
-        ->labelText('Scan for Phone Number!')
+        ->labelText('This is the label')
         ->labelFont(new NotoSans(20))
         ->labelAlignment(new LabelAlignmentCenter())
         ->validateResult(false)
@@ -39,14 +39,19 @@ if (isset($_GET['nr'])) {
     // Directly output the QR code
 
     echo $phone->getString();
+    
 
 } else {
     echo <<<FORMULAR
-    <div>
+    <head>
+    <link rel="stylesheet" href="./main.css">
+    </head>
+    <br><br><br><br><br><br><br><br>
+    <div style="text-align:center">
      <form action="index.php" method="get">
-        <label for="fname">Make your phone number a QR Code</label>
-        <input id="num" type="text" placeholder="+43 1 22 33 444" name="nr">
-        <button>Sumbit</button>
+        <label for="fname"><h1>Make your phone number a QR Code</h1></label><br><br><br>
+        <input id="num" type="text" placeholder="+43 1 22 33 444" name="nr"><br>
+        <button>Submit</button>
         </form>
      </div>
     FORMULAR;

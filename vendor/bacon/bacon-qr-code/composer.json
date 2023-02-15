@@ -37,7 +37,7 @@
     },
     "archive": {
         "exclude": [
-          "/vendor/bacon/bacon-qr-code/test",
+            "/test",
             "/phpunit.xml.dist"
         ]
     }
