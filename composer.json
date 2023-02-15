@@ -1,20 +1,20 @@
 {
-    "name": "htlw3r/qr-code",
-    "description": "Pet QR Code Finder",
-    "type": "project",
-    "license": "GPL",
-    "autoload": {
-        "psr-4": {
-            "Htlw3r\\QrCode\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Moritz Liedl",
-            "email": "9186@htl.rennweg.at"
-        }
-    ],
-    "require": {
-        "endroid/qr-code": "^4.7"
+  "name": "htlw3r/qr-code",
+  "description": "Pet QR Code Finder",
+  "type": "project",
+  "license": "GPL",
+  "autoload": {
+    "psr-4": {
+      "Htlw3r\\QrCode\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "Moritz Liedl",
+      "email": "9186@htl.rennweg.at"
+    }
+  ],
+  "require": {
+    "endroid/qr-code": "^4.7"
+  }
 }
